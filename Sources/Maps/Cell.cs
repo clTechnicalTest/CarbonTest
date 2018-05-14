@@ -2,7 +2,7 @@
 {
     public class Cell
     {
-		public Coordinate Coordinate { get; }
+		public Coordinate Coordinate { get; protected set; }
 
         public Cell(string type, Coordinate coordinate)
         {

@@ -17,7 +17,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadAWellFormattedLine_ReturnsOneMapEntryWithRightType()
+		public void ReadAWellFormattedLine_GetEntries_ReturnsOneMapEntryWithRightType()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -35,7 +35,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadACommentLine_ReturnsAnEmptyCollection()
+		public void ReadACommentLine_GetEntries_ReturnsAnEmptyCollection()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -51,7 +51,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadAMapLine_ReturnsAMapEntryWithPopulatedProperties()
+		public void ReadAMapLine_GetEntries_ReturnsAMapEntryWithPopulatedProperties()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -73,7 +73,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadABadFormattedMapLine_ThrowsInvalidArgument()
+		public void ReadABadFormattedMapLine_GetEntries_ThrowsInvalidArgument()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -90,7 +90,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadATreasureLine_ReturnsATreasureEntryWithPopulatedProperties()
+		public void ReadATreasureLine_GetEntries_ReturnsATreasureEntryWithPopulatedProperties()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -114,7 +114,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadABadFormattedTreasureLine_ThrowsInvalidArgument()
+		public void ReadABadFormattedTreasureLine_GetEntries_ThrowsInvalidArgument()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -132,7 +132,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadAMountainLine_ReturnsAMountainEntryWithPopulatedProperties()
+		public void ReadAMountainLine_GetEntries_ReturnsAMountainEntryWithPopulatedProperties()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -154,7 +154,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadABadFormattedMountainLine_ThrowsInvalidArgument()
+		public void ReadABadFormattedMountainLine_GetEntries_ThrowsInvalidArgument()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -171,7 +171,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadAnAdventurerLine_ReturnsAnAdventurerEntryWithPopulatedProperties()
+		public void ReadAnAdventurerLine_GetEntries_ReturnsAnAdventurerEntryWithPopulatedProperties()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -199,7 +199,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void ReadABadFormattedAdventurerLine_ThrowsInvalidArgument()
+		public void ReadABadFormattedAdventurerLine_GetEntries_ThrowsInvalidArgument()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{
@@ -219,7 +219,7 @@ namespace Tests.Maps
 		}
 
 		[Test]
-		public void Read3WellFormattedLine_Returns3MapEntry()
+		public void Read3WellFormattedLine_GetEntries_Returns3MapEntry()
 		{
 			using (MemoryStream inputStream = new MemoryStream())
 			{

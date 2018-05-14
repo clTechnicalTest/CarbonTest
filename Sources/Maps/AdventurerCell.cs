@@ -10,5 +10,10 @@
 		}
 
 		public string Name { get; }
+
+		public void UpdateCoordinate(int x, int y){
+			Coordinate coordinate = new Coordinate(x, y);
+			this.Coordinate = coordinate;
+		}
 	}
 }
